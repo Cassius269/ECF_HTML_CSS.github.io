@@ -140,10 +140,44 @@ header a  {
         justify-content: space-around;
         align-items: center;
     }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 50rem;
+        border: 2x solid black;
+        margin: 5rem auto;
+        gap:2rem;
+        background:antiquewhite;  
+        padding: 2rem;
+        border-radius: 18px;
+    }
+    
+    input {
+        padding: 0.5rem;   
+    }
+    textarea {
+        resize: none;
+    }
+
+    .section_map {
+        margin: 14rem auto 0 auto ;
+        width:40rem;
+        background:antiquewhite;    
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 18px;
+    }
 }
 
-@media screen and (min-width:768px){
 
+
+/* ecran moyen */
+
+
+@media screen and (min-width:768px){
     header a  {
         font-size: 2rem;
     }
@@ -182,30 +216,8 @@ button {
     height: 6rem;
     padding: 0 1rem;
 }
+/* */
 
-} 
-
-/* ecran moyen */
-
-
-@media screen and (min-width:768px){
-
-    header a  {
-        font-size: 2rem;
-        text-decoration: none;
-    }
-
-.main_section_presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 8rem;
-    width: 56rem;
-
-}
-.main_section_presentation p {
-    font-size:2rem;
-}
 .main_section_presentation img {
     width: 90%;
 }
