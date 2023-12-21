@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="Page d'accueil de l'agence de voyage">
+    <title>Page d'accueil</title>
+    <link rel="icon" href="./images/logo.png" type="image/svg"> 
+    <link href="./style-partir.css" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/logo.png" alt="logo de l'agence">
+        <nav>
+            <ul>
+                <li><a href="./index.html" title="lien vers la page d'accueil">Accueil</a></li>
+                <li><a href="./partir.html" title="lien vers la page Partir">Partir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Nos coordonnées</h1>
+            <ul>
+                <li><a href="tel:+33477122334">Tél. : 04 77 12 23 34</a></li>
+                <li><a href="mailto:contact@voyage.com">Mail : contact@voyage.com</a></li>
+                <li><a href="#">Adresse : Place du carrousel, 75001 Paris</a></li>
+                <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.6451165950725!2d4.829888181691361!3d45.75859867395858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea516269836f%3A0xf1aa867fad8baea7!2sBellecour%20Le%20Viste!5e0!3m2!1sfr!2sfr!4v1700228774973!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+            </ul>
+        </section>
+        <form>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" placeholder="nom" required>
+
+            <label for="prenom">Prenom:</label>
+            <input type="text" id="prenom" name="prenom" placeholder="prenom" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+
+            <label for="tel">Téléphone:</label>
+            <input type="tel" id="tel" name="tel" placeholder="téléphone" required>
+
+            <label for="demande">Votre demande</label>
+            <textarea id="demande" name="demande" required>Message</textarea>
+
+            <label for="date_debut">Date de début des vacances:</label>
+            <input type="date" id="date_debut" name="date_debut"  min="2023-11-17" max="2024-12-31">
+
+            <label for="destination">Choisir une destination:</label>
+            <select name="destination" id="destination">
+              <option value="">--Choisir un endroit--</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Les Maldives">Les Maldives</option>
+              <option value="Maroc">Maroc</option>
+              <option value="Seychelles">Seychelles</option>
+            </select>
+            
+            <label for="date_fin">Date de fin des vacances:</label>
+            <input type="date" id="date_fin" name="date_fin"  min="2023-11-17" max="2024-12-31">
+
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <a href="#" title="lien vers les mentions légales">Copyright 2023</a>
+        <a href="./index.html" title="lien vers la page d'accueil"><img class="logo" src="./images/logo.png" alt="logo de l'agence"></a>
+        <div>
+            <h3>Suivez nos voyages</h3>
+            <ul>
+                <li><a href="#" title="lien vers la page Facebook "><img src="./images/bxl-facebook-square.svg" alt=""></a></li>
+                <li><a href="#" title="lien vers la page Instagram"><img src="./images/bxl-instagram-alt.svg" alt=""></a></li>            
+                <li><a href="#" title="lien vers la page "><img src="./images/bxl-linkedin-square.svg" alt=""></a></li>        
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
