@@ -11,85 +11,86 @@ html {
 }
 
 
-header {
-    position: fixed;
-    right: 0;
-    top:0;
-    left: 0;
-    height: 5rem;
-    background-color: #cee4f7;
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-    padding: 1.5rem;
-}
-
-header a  {
-font-size: 1rem;
-text-decoration: none;
-}
-
-header ul {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 2rem;
-}
-
-header li {
-    margin-left: 1rem;
-}
-
-h1{
-    font-family: 'Montserrat', sans-serif;  
-    background-color: white;
-    margin-bottom:1rem;
-}
-
-
-#animationButton {
-    height: 2rem;
-    background-color: rgb(140, 186, 207);
-    background-image: url("./images/cute-fish-near-coral-reef_23-2150699385.webp");
-    animation-name: fleche;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes fleche {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(4rem);
-    }
-}
-
-main {
-    margin-top: 8rem;
-}
-
-
-ul {
-    list-style: none;
-}
-
-li {
-    padding: 0.5rem 0;
-}
-
-footer {
-    background-color: rgb(202, 235, 236);
-    min-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
 /* Mobile first*/
 
 @media screen and (min-width:375px){
 
+    header {
+        position: fixed;
+        right: 0;
+        top:0;
+        left: 0;
+        height: 5rem;
+        background-color: #cee4f7;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        padding: 1.5rem;
+    }
+    
+    header a  {
+    font-size: 1rem;
+    text-decoration: none;
+    }
+    
+    header ul {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2rem;
+    }
+    
+    header li {
+        margin-left: 1rem;
+    }
+    
+    #titre_Page_accueil{
+        font-family: 'Montserrat', sans-serif;  
+        background-color: white;
+        margin-bottom:1rem;
+    }
+    
+    
+    #animationButton {
+        height: 2rem;
+        background-color: rgb(140, 186, 207);
+        background-image: url("./images/cute-fish-near-coral-reef_23-2150699385.webp");
+        animation-name: fleche;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes fleche {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(4rem);
+        }
+    }
+    
+    main {
+        margin-top: 8rem;
+    }
+    
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        padding: 0.5rem 0;
+    }
+    
+    footer {
+        background-color: rgb(202, 235, 236);
+        min-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
     .main_section_imagePrincipale {
         background: url("./images/intro.jpg");
         background-size: cover;
@@ -195,44 +196,62 @@ footer {
 
 @media screen and (min-width:768px) and (max-width: 999px){ 
     header a  {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
+   
+    .main_section_imagePrincipale {
+        background: url("./images/intro.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        height: 400px;
+        margin: auto;
+        }
 
+            
+    #animationButton {
+        height: 3rem;
+    }
+  
+    @keyframes fleche {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(7rem);
+        }
+    }
 .main_section_presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 8rem;
     width: 56rem;
-
 }
+
 .main_section_presentation p {
-    font-size:2rem;
+    font-size:1rem;
+    padding-left: 4rem;
+    margin:2rem;
 }
 
 
-h1{
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    left:19rem;
-    bottom: 50rem;
-    width: 50rem;
-    font-size: 5rem;
-    padding: 2rem 0 1rem 4rem;
+#titre_Page_accueil{
+    font-size: 4rem;
+    padding: 1.5rem 0 1rem 1.5rem;
     background-color: white;
 }
 
-/* */
+.main_section_imagePrincipale_centrerElements {
+    top:11rem; /* Par défaut la position est relative au lieu d'être static comme sur le mobile first */
+}
 
 .main_section_presentation img {
     width: 90%;
+    margin-top: 1rem;
 }
 
 #main_section_destinations {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 70rem;  
-    margin-bottom: 3rem;
-    margin: auto;
+    width: 60rem;  
+    margin: 0 auto 2rem auto;
+    padding-top:1rem;
 }
 
 ul {
