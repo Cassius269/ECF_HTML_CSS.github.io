@@ -16,7 +16,7 @@ header {
     right: 0;
     top:0;
     left: 0;
-    height: 6rem;
+    height: 5rem;
     background-color: #cee4f7;
     display: flex;
     justify-content: center;
@@ -66,7 +66,8 @@ margin: auto;
     grid-template-rows: repeat(2,1fr);
     border: 1px solid black;
     background-color: green;  
-    margin-left: 2rem;
+    width: 285px;
+    margin: 2rem auto;
 }
 
 
@@ -79,6 +80,11 @@ margin: auto;
     width: 10rem;
 }
 
+.main_section_presentation p {
+    background-color: antiquewhite;
+    padding: 3rem;
+    border-radius: 93px;
+}
 
 button {
     height: 3rem;
@@ -108,6 +114,7 @@ button {
 main {
     margin-top: 8rem;
 }
+
 /* Mobile first*/
 
 @media screen and (min-width:375px){
@@ -115,8 +122,8 @@ main {
 
 
     .logo {
-        height: 70px; 
-        width: 70px;       
+        height: 57px;
+        width: 53px;   
     }
 
 
@@ -137,11 +144,6 @@ main {
     .main_section_presentation img {
         width: 100%;
         
-    }
-
-    .main_section_presentation p {
-        background-color: antiquewhite;
-        padding: 5rem;
     }
 
     footer {
