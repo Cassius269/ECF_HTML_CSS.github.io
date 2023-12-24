@@ -273,11 +273,37 @@ li {
     .main_section_imagePrincipale {
         height: 500px;
         }    
-
+        
+     .main_section_imagePrincipale_centrerElements {
+            top: 20rem;
+        }
+    
+     #titre_Page_accueil{
+            font-size: 4rem;
+        }
+        
     main {
         margin-top:9rem;
     }
-
+     
+    button {
+        height: 4rem;
+        font-size:1.5rem;
+        padding: 0 1rem;
+    }
+    #animationButton {
+        height: 5rem;
+    }
+  
+    @keyframes fleche {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(6.5rem);
+        }
+    }
+    
     .main_section_presentation {
         display: flex;
         justify-content: space-around;
