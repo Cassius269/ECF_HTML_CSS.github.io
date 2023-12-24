@@ -89,6 +89,7 @@ html {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-top:1rem
     }
     
     .main_section_imagePrincipale {
@@ -122,7 +123,7 @@ html {
         
         #main_section_destinations img{
             width: 10rem;
-        
+
         }
         
         #main_section_destinations div{
@@ -269,37 +270,19 @@ li {
 
 @media screen  and (min-width:1000px){
 
-    html {
-        font-size: 12px;
-    }
-
-    .logo {
-        height: 70px; 
-        width: 70px;       
-    }
+    .main_section_imagePrincipale {
+        height: 500px;
+        }    
 
     main {
-        margin-top:12rem;
+        margin-top:9rem;
     }
-
-    ul {
-        list-style: none;
-    }
-
-    li {
-        padding: 0.5rem 0;
-    }
-
- 
-
-
 
     .main_section_presentation {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-        width: 99rem;
-        width: 100%;
+        margin:6rem 0 6rem 0;
     }
 
     .main_section_presentation img {
@@ -309,10 +292,23 @@ li {
     .main_section_presentation p {
         background-color: antiquewhite;
         padding: 5rem;
+        font-size: 2rem;
+        text-align: center;
+        align-content: center;
+        display: flex;
+        align-items: center;
     }
 
-    footer {
-        background-color: rgb(202, 235, 236);
-        margin-top: 10rem;
+    #main_section_destinations {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80rem;  
+        margin: 0 auto 2rem auto;
+        padding-top:1rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    #main_section_destinations img{
+        width: 20rem;
     }
 }
