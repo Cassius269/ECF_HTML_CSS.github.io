@@ -175,14 +175,13 @@ html {
         display: grid;
         grid-template-columns: 100px 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 4fr 1fr 1fr 1fr;
-        width: 35rem;
+        width: 30rem;
         border: 2x solid black;
         gap:2rem;
         padding: 2rem;
         border-radius: 18px;
         background-color: rgb(129, 212, 212);
-        position: relative;
-        left: 8rem;
+        margin: auto;
     }
     
     input {
