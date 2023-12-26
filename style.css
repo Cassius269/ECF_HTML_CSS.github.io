@@ -89,7 +89,7 @@ html {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top:1rem
+        padding-top:1.5rem
     }
     
     .main_section_imagePrincipale {
@@ -405,4 +405,14 @@ li {
     width: 650px;
     height: 300px;
 }
+
+
+footer {
+    font-size: 1.4rem;
+}
+
+#footer_logo{
+    position: relative;
+    bottom: 3rem;
+  }
 }
